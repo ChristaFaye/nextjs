@@ -1,0 +1,94 @@
+.portfolio {
+    /* box-sizing: border-box; */
+    min-height: 85vh;
+    /* padding: 1rem 0; */
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .slider {
+    width: 900px;
+    /* min-height: 200px; */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slides::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    color: black;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 900px;
+    height: 500px;
+    /* margin-right: 50px; */
+    border-radius: 10px;
+    background: transparent;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+  }
+
+
+  .slides Image {
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider > a {
+    display: inline-flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+    background: cyan;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0.3rem 0.8rem 0;
+    position: relative;
+  }
+  .slider > a:active {
+    top: 1px;
+    color: black;
+  }
+  .slider > a:focus {
+    background: cyan;
+  }
+  
+  /* Don't need button navigation */
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+  }
