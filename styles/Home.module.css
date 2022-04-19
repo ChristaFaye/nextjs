@@ -4,7 +4,7 @@
 
 .container {
   padding: 0 0rem;
-  background-image:url("../pages/img/polar2.jpg");
+  background-image:url("/polar2.jpg");
 }
 
 .main {
@@ -25,7 +25,7 @@
 .footer {
   position: absolute;
   width: 100%;
-  background-image:url("../pages/img/polar2.jpg");
+  background-image:url("/polar2.jpg");
   color: lightpink;
   padding: 1rem 0;
   text-align: center;
