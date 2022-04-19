@@ -43,7 +43,7 @@ export default function Home() {
       <main className={styles.main}>
         
         <div>
-          <h1 className={styles.title}>Hi, I'm <Link href="/posts/about"><span className={styles.name}>Christa Faye.</span></Link></h1>
+          <span className={styles.title}>Hi, I am <Link href="/posts/about"><a className={styles.name}>Christa Faye.</a></Link></span>
           <h3 className={styles.description}>System Analyst | Web Designer | Graphic Artist</h3>
         </div>
 

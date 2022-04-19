@@ -48,7 +48,7 @@ export default function About() {
         <div className={styles.aboutMe}>
           <h1>Hey, there!</h1>
           <div >
-            <p>Hi! I'm Christa Faye Reyes. I am borne Filipino, based in Manitoba, Canada.</p>
+            <p>Hi! My name is Christa Faye Reyes. I am borne Filipino, based in Manitoba, Canada.</p>
             <p>I have an almost 7 years of experience on back-end development and support. I worked as an Application Support, exposed to different programming languages such as: SQL, PowerShell, Bash, C#, ASP.Net, HTML, CSS, JavaScript, Ansible.. etc.
             </p>
             <p>Aside from my technical background, I had a volunteer experience since 2013 to 2018 which stirred my passion for design. I volunteer in creating publication materials, audio-visual presentations, editing podcasts and coordinating events
